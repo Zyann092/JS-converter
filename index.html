@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script defer src="script/main.js"></script>
+    <section>
+        <div class="converter">
+            <h1>Weight Converter</h1>
+
+            <div class="container">
+                <div class="first-card">
+                    <select name="weightFirstOptions" id="weightFirstOptions">
+                        <option value="kilo">Kilogram</option>
+                        <option value="pound">Pounds</option>
+                        <option value="ton">Tons</option>
+                    </select>
+                    <input type="number" id="weightInput" name="weightInput" placeholder="Input weight here">
+                </div>
+                <div class="second-card">
+                    <select name="weightSecondOptions" id="weightSecondOptions">
+                        <option value="kilo">Kilogram</option>
+                        <option value="pound">Pounds</option>
+                        <option value="ton">Tons</option>
+                    </select>
+                </div>
+                <div class="third-card">
+                    <input type="button" value="Convert" onclick="weightConverter()">
+                    <span>Result: </span>
+                    <span id="weightDisplay"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
